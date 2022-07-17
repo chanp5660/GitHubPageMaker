@@ -1,0 +1,70 @@
+---
+layout: post
+current: post
+cover:  assets/built/images/github-logo.jpg
+navigation: True
+title: github 블로그 설치 
+date: 2022-07-14 17:40:00 +0900
+tags: [github]
+class: post-template
+subclass: 'post tag-python'
+author: chanp5660
+---
+
+
+# 깃허브 블로그 추천 테마  
+
+- http://jekyllthemes.org/
+
+- https://jekyll-themes.com/free/   
+  
+    * 여기에서 minimalistic  
+    https://jekyll-themes.com/jekyll-theme-minimalistic/
+
+## 블로그 기본 변경
+
+- _config.yml 수정
+    - 프로필 이미지 수정 
+    ![dog-gdd132e1b0_1920](https://user-images.githubusercontent.com/46266247/178733264-9c4d49e6-3698-4096-8da4-16318de6f27a.jpg)
+
+    - 파비콘 수정 (favicon, 탭에 뜨는 이미지 설정)
+    https://velog.io/@eona1301/Github-Blog-%ED%8C%8C%EB%B9%84%EC%BD%98Favicon-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0  
+    
+
+# 블로그 주소 설정
+
+https://ahnslab.com/21-how-to-start-github-blog/
+
+# 쉽고 빠르게 GitHub 블로그  
+https://dreamgonfly.github.io/blog/jekyll-remote-theme/
+
+# 개인 로컬 환경(windows)에서 GitHub Blog With jekyll 세팅하기
+  
+https://rerewww.github.io/setting/setting-jekyll-blog/
+
+# git Git bash 연동  
+
+https://transferhwang.tistory.com/160
+
+# Minimal Mistakes 를 적용한 Github Page 만들기  
+https://pnurep.github.io/blogging/github-page-minimal-mistakes/#
+
+
+# 깃허브 블로그 따라하기 유투브  
+
+https://www.youtube.com/watch?v=2ClW2LdqP30  유투브
+
+https://moon9342.github.io/jekyll-start 사이트
+
+
+## jekyll 실행 시킬 때 `require': cannot load such file -- webrick (LoadError) 오류가 난다면 bundle add webrick  
+https://junho85.pe.kr/1850
+
+# 주피터 노트북에서 MD 파일 보기  
+JupyterLab markdown rendering  
+https://www.youtube.com/watch?v=eQsRlqK-z1c
+
+
+```python
+
+```

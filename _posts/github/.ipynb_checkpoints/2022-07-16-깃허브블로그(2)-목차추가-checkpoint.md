@@ -1,0 +1,60 @@
+---
+layout: post
+current: post
+cover:  assets/built/images/github-logo.png
+navigation: True
+title: 깃허브블로그(2)-목차추가 
+date: 2022-07-17 02:08:00 +0900
+tags: [github]
+class: post-template
+subclass: 'post tag-python'
+author: chanp5660
+---
+
+{% include githubblog-table-of-contents.html %}
+
+# 깃허브블로그(2)-목차추가
+
+
+>어떤 사람들이 필요한 블로그인가?  
+    - 포스팅 된 글의 시리즈를 가질 때 목차 설정하는 방법  
+    - 기존 준비 : [https://moon9342.github.io/](https://moon9342.github.io/) 블로그의 깃허브 블로그를 생성한 사람, 같은 주제로 포스팅된 글이 2개 이상 있어야 한다.
+
+
+## 목차 구성 HTML 파일 생성
+- root/_includes 폴더에 저장 ( 다른폴더에 해도 된다. )
+- 제목의 형식은 따로 없지만 블로그에 목차가 여러개이면 헷갈릴 수 있으므로 본인의 형식을 정하는 것도 좋다.
+    - 예시 : 형식이 "주제-table-of-contents.html" 이면 본 블로그 목차라면 "githubblog-table-of-contens.html"로 지정한다.
+- 아래 내용으로 html 내용을 채워준다.  
+
+```html
+<span class="table-of-contents-list">Python 강좌는 여러 절로 구성되어 있습니다. </span>
+<ul class="table-of-contents-list">
+    <li><a href="./python-basic">Python 강좌(1) - Python 기본</a></li>
+    <li><a href="./python-control-statement">Python 강좌(2) - Python 제어문</a></li>
+</ul>
+```
+
+- href 부분에는 포스팅 된 글의 날짜를 제외한 제목이다.
+```html
+<li><a href="./python-basic">Python 강좌(1) - Python 기본</a></li>
+```
+
+## CSS style 추가
+- 한번만 설정하면 되는 것으로 처음하는 사람은 https://moon9342.github.io/jekyll-struct 를 참조
+
+## post안에 html 링크 추가
+- 포스트 안에 원하는 목차 위치에 해당 문구를 추가하면 된다.  
+- 형식  
+
+  <img src="https://user-images.githubusercontent.com/46266247/179366362-a4392897-8b0b-4b0b-b64f-66e63b8ea3da.png" width="20%">
+
+- 예시  
+
+  <img src="https://user-images.githubusercontent.com/46266247/179366390-f000ca7d-4f08-4173-9585-78e4b653e86f.png" width="40%">
+
+
+## 결과
+
+<img src="https://user-images.githubusercontent.com/46266247/179365355-379624c4-101b-4021-8d3d-70c8abdd294c.png" width="70%">
+

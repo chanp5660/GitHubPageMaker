@@ -1,0 +1,20 @@
+jekyll :
+  name: jekyll
+  description: False
+  cover: assets/built/images/jekyll-logo.jpg
+python :
+  name: python
+  description: False
+  cover: assets/built/images/python-logo.jpg
+github :
+  name: github
+  description: False
+  cover: False
+jupyter :
+  name: jupyter
+  description: False
+  cover: assets/built/images/jupyter-logo.jpg
+programming :
+  name: programming
+  description: False
+  cover: False
