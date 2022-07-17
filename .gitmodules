@@ -1,0 +1,3 @@
+[submodule "output"]
+	path = output
+	url = https://github.com/chanp5660/chanp5660.github.io.git
