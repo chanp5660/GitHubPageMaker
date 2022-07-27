@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://chanp5660.github.io/tag/deeplearning/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://chanp5660.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-07-27T15:34:02+00:00</updated>
+  <id>https://chanp5660.github.io/tag/deeplearning/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Today I Learned | </title>
+  
+
+  
+    <subtitle>오늘 공부한 내용은 오늘 정리하자</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">NLP 자연어처리(2) - 언어 모델</title>
+      <link href="https://chanp5660.github.io/NLP-%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC(2)-%EC%96%B8%EC%96%B4-%EB%AA%A8%EB%8D%B8" rel="alternate" type="text/html" title="NLP 자연어처리(2) - 언어 모델" />
+      <published>2022-07-22T13:00:00+00:00</published>
+      <updated>2022-07-22T13:00:00+00:00</updated>
+      <id>https://chanp5660.github.io/NLP%20%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC(2)%20-%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8</id>
+      <content type="html" xml:base="https://chanp5660.github.io/NLP-%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC(2)-%EC%96%B8%EC%96%B4-%EB%AA%A8%EB%8D%B8">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;NLP 자연어처리 목차 순서는 참조 링크를 따른다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./NLP-자연어처리(1)-텍스트-전처리&quot;&gt;NLP 자연어처리(1) - 텍스트 전처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./NLP-자연어처리(2)-언어-모델&quot;&gt;NLP 자연어처리(2) - 언어 모델&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;nlp-자연어처리2---언어-모델&quot;&gt;NLP 자연어처리(2) - 언어 모델&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;본 블로그는 위키독스에 나와있는 &lt;a href=&quot;https://wikidocs.net/book/2155&quot;&gt;&lt;strong&gt;딥 러닝을 이용한 자연어 처리 입문&lt;/strong&gt;&lt;/a&gt;을 따라하고 실행하면서 나만의 추가 정보들을 넣어가면 진행하기 위한 글이다. 배우려고 하는 사람은 제공된 링크를 타고 가서 배우는게 본 블로그보다 정리가 잘되어 있어 깔끔하고 좋다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;언어 모델(Language Model)&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#Language_Model&quot;&gt;언어 모델(Language Model)이란?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#SLM&quot;&gt;통계적 언어 모델(Statistical Language Model, SLM)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Stemming_Lemmatization&quot;&gt;N-gram 언어 모델(N-gram Language Model)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Language_Model_for_Korean_Sentences&quot;&gt;한국어에서의 언어 모델(Language Model for Korean Sentences)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#PPL&quot;&gt;펄플렉서티(Perplexity, PPL)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Conditional Probability&quot;&gt;조건부 확률(Conditional Probability)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;– 수정중 –&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>chanp5660</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="deeplearning" />
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html">NLP 자연어처리 목차 순서는 참조 링크를 따른다. NLP 자연어처리(1) - 텍스트 전처리 NLP 자연어처리(2) - 언어 모델</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">NLP 자연어처리(1) - 텍스트 전처리</title>
+      <link href="https://chanp5660.github.io/NLP-%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC(1)-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%A0%84%EC%B2%98%EB%A6%AC" rel="alternate" type="text/html" title="NLP 자연어처리(1) - 텍스트 전처리" />
+      <published>2022-07-20T11:00:00+00:00</published>
+      <updated>2022-07-20T11:00:00+00:00</updated>
+      <id>https://chanp5660.github.io/NLP%20%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC(1)%20-%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%A0%84%EC%B2%98%EB%A6%AC</id>
+      <content type="html" xml:base="https://chanp5660.github.io/NLP-%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC(1)-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%A0%84%EC%B2%98%EB%A6%AC">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;NLP 자연어처리 목차 순서는 참조 링크를 따른다.&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./NLP-자연어처리(1)-텍스트-전처리&quot;&gt;NLP 자연어처리(1) - 텍스트 전처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./NLP-자연어처리(2)-언어-모델&quot;&gt;NLP 자연어처리(2) - 언어 모델&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;워크 플로우&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wikidocs.net/images/page/31947/%EB%A8%B8%EC%8B%A0_%EB%9F%AC%EB%8B%9D_%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0.PNG&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;* 내용 및 이미지 참조 링크 &lt;a href=&quot;https://wikidocs.net/31947&quot;&gt;https://wikidocs.net/31947&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;본 블로그 내용은 워크 플로우에서 &lt;strong&gt;“전처리 및 정제”&lt;/strong&gt; 부분에 해당 된다.&lt;/p&gt;
+
+&lt;h1 id=&quot;nlp-자연어처리1---텍스트-전처리&quot;&gt;NLP 자연어처리(1) - 텍스트 전처리&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;본 블로그는 위키독스에 나와있는 &lt;a href=&quot;https://wikidocs.net/book/2155&quot;&gt;&lt;strong&gt;딥 러닝을 이용한 자연어 처리 입문&lt;/strong&gt;&lt;/a&gt;을 따라하고 실행하면서 나만의 추가 정보들을 넣어가면 진행하기 위한 글이다. 배우려고 하는 사람은 제공된 링크를 타고 가서 배우는게 본 블로그보다 정리가 잘되어 있어 깔끔하고 좋다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;나만의 해석
+    &lt;ul&gt;
+      &lt;li&gt;모든 부분들에서 잘하면 좋겠지만 “텍스트 전처리” 부분은 자연어 처리에서 &lt;strong&gt;가장 중요&lt;/strong&gt;하다고 생각한다. 이 부분에서 결과가 만족되지 못한다면 다음 모든 부분에서 절대 만족할 수 없을 것이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;텍스트 전처리(Text Preprocessing) &lt;a href=&quot;https://wikidocs.net/21694&quot;&gt;https://wikidocs.net/21694&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#Tokenization&quot;&gt;토큰화(Tokenization)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Cleaning_Normalization&quot;&gt;정제(Cleaning) and 정규화(Normalization)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Stemming_Lemmatization&quot;&gt;어간 추출(Stemming) and 표제어 추출(Lemmatization)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Stopword&quot;&gt;불용어(Stopword)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Regular_Expression&quot;&gt;정규 표현식(Regular Expression)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Integer_Encoding&quot;&gt;정수 인코딩(Integer Encoding)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Padding&quot;&gt;패딩(Padding)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#One-Hot_Encoding&quot;&gt;원-핫 인코딩(One-Hot Encoding)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Splitting_Data&quot;&gt;데이터의 분리(Splitting Data)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#Text_Preprocessing_Tools_for_Korean_Text&quot;&gt;한국어 전처리 패키지(Text Preprocessing Tools for Korean Text)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p id=&quot;Tokenization&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;토큰화tokenization&quot;&gt;토큰화(Tokenization)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/21698&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;주어진 코퍼스(corpus)에서 토큰(token)이라고 불리는 단위로 나누는 작업을 토큰화(tokenization)라고 한다.&lt;/li&gt;
+  &lt;li&gt;코퍼스(corpus) : 말뭉치; 글자들이 묶여있는 단락, 문단 등이라고 생각한다.&lt;/li&gt;
+  &lt;li&gt;토큰(token) : 상황에 따라 다르지만 의미 있는 부분을 말한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;_-1-단어-토큰화word-tokenization&quot;&gt;_ 1. 단어 토큰화(Word Tokenization)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;단어를 기준으로 토큰화 작업을 하는 것&lt;/li&gt;
+  &lt;li&gt;간단한 예시
+    &lt;ul&gt;
+      &lt;li&gt;“토큰화! 작업을 하는 것은, 보통 사람마다 기준이 다릅니다.”&lt;/li&gt;
+      &lt;li&gt;“토큰화”, “작업을”, “하는”, “것은”, “보통”, “사람마다”, “기준이”, “다릅니다”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;_-2-토큰화-중-생기는-선택의-순간&quot;&gt;_ 2. 토큰화 중 생기는 선택의 순간&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;어떤 용도로 사용할건지에 따라 토큰화할 기준을 직접 정해야한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;간단한 예시
+    &lt;ul&gt;
+      &lt;li&gt;Don’t에 아포스트로피(‘)가 있는데 어떤 기준으로 토큰화 하는지에 따른 여러 결과가 있다.
+        &lt;ul&gt;
+          &lt;li&gt;Don’t, Don t, Dont, Do n’t ( 단어 기준 )&lt;/li&gt;
+          &lt;li&gt;Jone’s, Jone s, Jone, Jones ( 해석 기준 : 가르키는 대상 )&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;기존에 공개된 도구들이 존재하면 이용하는게 좋다. 혹시 원하는 작업이 없다면 직접 설계하여 추가하는 방법도 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;예시 &lt;a href=&quot;https://wikidocs.net/21698&quot;&gt;https://wikidocs.net/21698&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;NLTK : 영어 코퍼스를 토큰화 하기 위한 도구
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;nltk&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;nltk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'punkt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 처음 하시는 분은 실행해 놔야합니다.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;nltk.tokenize&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_tokenize&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 도구 토큰화1
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;nltk.tokenize&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WordPunctTokenizer&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 도구 토큰화2
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow.keras.preprocessing.text&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text_to_word_sequence&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 도구 토큰화3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'단어 토큰화1 :'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word_tokenize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;단어 토큰화1 : ['Do', &quot;n't&quot;, 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', ',', 'Mr.', 'Jone', &quot;'s&quot;, 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop', '.']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'단어 토큰화2 :'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WordPunctTokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;단어 토큰화2 : ['Don', &quot;'&quot;, 't', 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', ',', 'Mr', '.', 'Jone', &quot;'&quot;, 's', 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop', '.']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'단어 토큰화3 :'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text_to_word_sequence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;단어 토큰화3 : [&quot;don't&quot;, 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', 'mr', &quot;jone's&quot;, 'orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;관찰
+    &lt;ul&gt;
+      &lt;li&gt;word_tokenize는 Don’t를 Do와 n’t로 분리하였으며, 반면 Jone’s는 Jone과 ‘s로 분리한 것을 확인&lt;/li&gt;
+      &lt;li&gt;WordPunctTokenizer는 구두점을 별도로 분류하는 특징을 가지고 있어 Don’t를 Don과 ‘와 t로 분리, Jone’s를 Jone과 ‘와 s로 분리한 것을 확인&lt;/li&gt;
+      &lt;li&gt;text_to_word_sequence(케라스 도구) 에서는 모든 영문을 소문자로 바꾸고 마침표나 컴마, 느낌표 등의 구두점을 제거하지만 단어내에 있는 Don’t와 jone’s와 같은 경우 아포스트로피는 존재한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;_-3-토큰화에서-고려해야할-사항&quot;&gt;_ 3. 토큰화에서 고려해야할 사항&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;어떻게 해결해야 할지는 정해진 것이 아니라 본인의 목적에 따라 결정해야한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;구두점이나 특수 문자를 단순 제외해서는 안 된다.&lt;/li&gt;
+  &lt;li&gt;줄임말과 단어 내에 띄어쓰기가 있는 경우.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;표준 토큰화 예제&lt;br /&gt;
+  Penn Treebank Tokenization의 규칙에 대해서 소개
+    &lt;ul&gt;
+      &lt;li&gt;규칙 1. 하이푼으로 구성된 단어는 하나로 유지한다.&lt;/li&gt;
+      &lt;li&gt;규칙 2. doesn’t와 같이 아포스트로피로 ‘접어’가 함께하는 단어는 분리해준다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;nltk.tokenize&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TreebankWordTokenizer&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TreebankWordTokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Starting a home-based restaurant may be an ideal. it doesn't have a food chain or restaurant of their own.&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'트리뱅크 워드토크나이저&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokenize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Starting a home-based restaurant may be an ideal. it doesn't have a food chain or restaurant of their own.
+
+트리뱅크 워드토크나이저
+ ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', &quot;n't&quot;, 'have', 'a', 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;규칙 1. 하이푼으로 구성된 단어는 하나로 유지한다.
+    &lt;ul&gt;
+      &lt;li&gt;‘home-based’&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;규칙 2. doesn’t와 같이 아포스트로피로 ‘접어’가 함께하는 단어는 분리해준다.
+    &lt;ul&gt;
+      &lt;li&gt;‘does’, “n’t”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;_-4-문장-토큰화sentence-tokenization&quot;&gt;_ 4. 문장 토큰화(Sentence Tokenization)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;보통 정제되지 않은 코퍼스 내에서 문장 단위로 구분할 때 사용된다.&lt;/li&gt;
+  &lt;li&gt;어떻게 구분할까?
+    &lt;ul&gt;
+      &lt;li&gt;특수문자(., ?, !, 등) 으로 구분한다면?
+        &lt;ul&gt;
+          &lt;li&gt;문장의 끝이 아닌 경우도 많다. ex) aaa@naver.com, ph.D, i’m&lt;/li&gt;
+          &lt;li&gt;따라서 특수문자로만 구분하는 것은 어려운 일이다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;제공하는 도구
+    &lt;ul&gt;
+      &lt;li&gt;NLTK : 영어 문장의 토큰화 pip install NLTK&lt;/li&gt;
+      &lt;li&gt;KSS : 한국어 문장의 토큰화 pip install KSS&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;nltk.tokenize&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sent_tokenize&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;His barber kept his word. But keeping such a huge secret to himself was driving him crazy. Finally, the barber went up a mountain and almost to the edge of a cliff. He dug a hole in the midst of some reeds. He looked about, to make sure no one was near.&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'문장 토큰화1 :'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sent_tokenize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;문장 토큰화1 : ['His barber kept his word.', 'But keeping such a huge secret to himself was driving him crazy.', 'Finally, the barber went up a mountain and almost to the edge of a cliff.', 'He dug a hole in the midst of some reeds.', 'He looked about, to make sure no one was near.']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;I am actively looking for Ph.D. students. and you are a Ph.D student.&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'문장 토큰화2 :'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sent_tokenize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;문장 토큰화2 : ['I am actively looking for Ph.D. students.', 'and you are a Ph.D student.']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;kss&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'딥 러닝 자연어 처리가 재미있기는 합니다. 그런데 문제는 영어보다 한국어로 할 때 너무 어렵습니다. 즉, 이제. 해보면 알걸요?'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'한국어 문장 토큰화 :'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kss&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split_sentences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;한국어 문장 토큰화 : ['딥 러닝 자연어 처리가 재미있기는 합니다.', '그런데 문제는 영어보다 한국어로 할 때 너무 어렵습니다.', '즉, 이제. 해보면 알걸요?']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;관찰
+    &lt;ul&gt;
+      &lt;li&gt;문장 토큰화1 : [“Finally,”, “about,”] 처럼 쉼표를 문장구분으로 인정하지 않는다.&lt;/li&gt;
+      &lt;li&gt;문장 토큰화2 ; [“ph.D.”, “ph.D”] 처럼 온점(.)을 문장구분으로 인정하지 않는다.&lt;/li&gt;
+      &lt;li&gt;KSS : [“즉, 이제. 해보면 알걸요?”] 위 두개 처럼 쓰임은 다르지만 올바르게 구분해주는 것을 볼 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;_-5-한국어에서의-토큰화의-어려움&quot;&gt;_ 5. 한국어에서의 토큰화의 어려움&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p id=&quot;Cleaning_Normalization&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;정제cleaning-and-정규화normalization&quot;&gt;정제(Cleaning) and 정규화(Normalization)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/21693&lt;/p&gt;
+
+&lt;p id=&quot;Stemming_Lemmatization&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;어간-추출stemming-and-표제어-추출lemmatization&quot;&gt;어간 추출(Stemming) and 표제어 추출(Lemmatization)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/21707&lt;/p&gt;
+
+&lt;p id=&quot;Stopword&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;불용어stopword&quot;&gt;불용어(Stopword)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/22530&lt;/p&gt;
+
+&lt;p id=&quot;Regular_Expression&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;정규-표현식regular-expression&quot;&gt;정규 표현식(Regular Expression)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/21703&lt;/p&gt;
+
+&lt;p id=&quot;Integer_Encoding&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;정수-인코딩integer-encoding&quot;&gt;정수 인코딩(Integer Encoding)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/31766&lt;/p&gt;
+
+&lt;p id=&quot;Padding&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;패딩padding&quot;&gt;패딩(Padding)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/83544&lt;/p&gt;
+
+&lt;p id=&quot;One-Hot_Encoding&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;원-핫-인코딩one-hot-encoding&quot;&gt;원-핫 인코딩(One-Hot Encoding)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/22647&lt;/p&gt;
+
+&lt;p id=&quot;Splitting_Data&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;데이터의-분리splitting-data&quot;&gt;데이터의 분리(Splitting Data)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/33274&lt;/p&gt;
+
+&lt;p id=&quot;Text_Preprocessing_Tools_for_Korean_Text&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;한국어-전처리-패키지text-preprocessing-tools-for-korean-text&quot;&gt;한국어 전처리 패키지(Text Preprocessing Tools for Korean Text)&lt;/h2&gt;
+
+&lt;p&gt;https://wikidocs.net/92961&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>chanp5660</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="deeplearning" />
+      
+        <category term="python" />
+      
+
+      
+        <summary type="html">NLP 자연어처리 목차 순서는 참조 링크를 따른다. NLP 자연어처리(1) - 텍스트 전처리 NLP 자연어처리(2) - 언어 모델</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
