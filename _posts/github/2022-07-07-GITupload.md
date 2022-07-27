@@ -53,11 +53,19 @@ author: chanp5660
 
 - 따로 업로드가 안되기 때문에 git의 issue를 이용하거나 이미지 폴더를 이용해서 연결함
 
-## 5. 카테고리 설정 방법
+## 5. git upload batch 파일 만들기
 
-참조(https://ansohxxn.github.io/blog/jekyll-directory-structure/)
+- git init 그리고 git remote 로 원격 설정이 되어 있는 상태에서는 앞으로 계속 add, commit, push 를 통해 버전 업을 해주어야한다. 
+- 편의성을 위해 commit message만 입력 받으면 자동으로 add, commit, push가 되도록 배치파일을 생성한다.
 
+- 먼저 .git 파일이 있는 곳으로 이동해주고나서 나머지 명령어들이 실행되어야 하므로 아래와 같은 코드를 "파일제목.bat" 로 만들어준다.  
 
-```python
+```bash
+set /p message="commit message 입력해주세요  :  "
+call cd C:\Users\tkd8484\Desktop\chanp5660\[GitHubPage]
+call git add -A
+call git commit -m "%message%"
+call git push origin master 
 
+pause
 ```

@@ -1,9 +1,9 @@
 ---  
 layout: post  
 current: post  
-cover:  assets/built/images/exitem-logo.png  
+cover:  assets/built/images/R-logo.png  
 navigation: True  
-title: RSelenium_tutorial   
+title: R언어-RSelenium_tutorial   
 date: 2019-05-10 00:19:00 +0900  
 tags: [exitem]  
 class: post-template  
@@ -12,9 +12,7 @@ author: chanp5660
 ---  
  
 
-# RSelnium_tutorial
-
-# RSelenium_tutorial
+# R언어-RSelenium_tutorial
 
 > 설치방법 : [파일다운로드](https://github.com/chanp5660/Util_chanp5660/files/9127955/BeforeSet.zip)(chromedriver, geckodriver, selenium-server-standalone) -> 같은 폴더에 둔다. -> cmd를 실행 -> 설치파일들이 들어있는 폴더의 디렉토리를 A라 할 때 -> *cd A* -> 작성 후 -> *java -Dwebdriver.gecko.driver="geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -port 4445* -> 실행 -> 켜둔 상태에서 진행
 
@@ -91,9 +89,4 @@ webElem <- remDr$findElement(using = "xpath", '//input[@class="gLFyf gsfi"]')
 webElem$sendKeysToElement(list("R Cran"))
 webElem <- remDr$findElement(using = "xpath", '//div[@class="sbl1"]')
 webElem$clickElement()
-```
-
-
-```python
-
 ```
